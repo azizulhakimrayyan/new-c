@@ -1,9 +1,12 @@
-# include<stdio.h>
+#include<stdio.h>
 int main (){
-int is_sunday=1;
-int is_snowing=1;
-printf("%d",is_sunday&&is_snowing); 
-
-
+  float a,b,c;
+  printf("enter a:");
+  scanf("%f", &a);
+  printf("enter b:");
+  scanf("%f", &b);
+  printf("enter c:");
+  scanf("%f", &c);
+  printf("average is %f",(a+b+c)/3 );
   return 0;
 }
