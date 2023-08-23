@@ -1,8 +1,9 @@
-#include <stdio.h>
+# include<stdio.h>
 int main (){
- int its_monday = 1;
- int its_raining =0;
- printf("%d",its_monday||its_raining); 
+int is_sunday=1;
+int is_snowing=1;
+printf("%d",is_sunday&&is_snowing); 
+
 
   return 0;
 }
