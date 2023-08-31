@@ -3,15 +3,21 @@ int main (){
   int number;
   printf("enter number");
   scanf("%d", &number);
-  if (number>=30)
+  if (number>=30&&number<=100)
   {
     printf("Congratulations on passing the exam! \n ");
-    if (number>=80)
+    if (number >= 80 && number <= 100)
     {
       printf("You received an A+ grade.");
     }
     
-  } else{
+  }
+  else if (number>100)
+  {
+    printf("write  a valid number");
+  }
+  
+  else{
     printf("We are sorry to inform you that you did not pass the exam. We wish you better luck in your future attempts.");
   }
   
