@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main (){
+  int number;
+  printf("enter number");
+  scanf("%d", &number);
+  if (number>=30)
+  {
+    printf("Congratulations on passing the exam! \n ");
+    if (number>=80)
+    {
+      printf("You received an A+ grade.");
+    }
+    
+  } else{
+    printf("We are sorry to inform you that you did not pass the exam. We wish you better luck in your future attempts.");
+  }
+  
+  return 0;
+}
