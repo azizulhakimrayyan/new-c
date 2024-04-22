@@ -1,14 +1,15 @@
-# include <stdio.h>
-// celcius to farenheit 
-int main () {
-float celcius;
-printf("enter celcius");
-scanf("%f",&celcius);
+#include <stdio.h>
 
-printf("farenheit is %f",(celcius*1.8)+32 );
+int main()
+{
+  float c, f;
+  printf("Enter the temperature in celcius:");
+  scanf("%f", &c);
 
+  printf("Temperature in farenheit:%f\n", (c * 1.8) + 32);
+  printf("Enter the temperature in farenheit:");
+  scanf("%f", &f);
 
-
-
-    return 0;
+  printf("Temperature in celcius:%f", ((f - 32) * 100) / 180);
+  return 0;
 }
