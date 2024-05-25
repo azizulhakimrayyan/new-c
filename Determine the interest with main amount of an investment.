@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main()
+{
+  int year, period;
+  float amount, inrate, value;
+  printf("enter amount,interest rate and period:(Like 200 2.1 5)\n ");
+  scanf("%f %f %d", &amount, &inrate, &period);
+  for (year = 1; year <= period; year++)
+  {
+    value = amount + amount * inrate;
+    printf("%d %.4fTK\n", year, value);
+    amount = value;
+  }
+  return 0;
+}
+
+
+
+
