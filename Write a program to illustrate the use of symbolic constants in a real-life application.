@@ -1,0 +1,18 @@
+#define flag 1
+#define pi 3.1416
+#include <stdio.h>
+int main()
+{
+  printf("Name: Azizul Hakim \nID: 2202110\n");
+  int r = 1;
+  while (flag)
+  {
+    if ((2 * pi * r) > 50)
+    {
+      printf("r = %d\n", r);
+      break;
+    }
+    r++;
+  }
+  return 0;
+}
