@@ -1,0 +1,13 @@
+#include <stdio.h>
+// Declatarion
+void rayyan();
+int main()
+{
+  rayyan(); // call
+  return 0;
+}
+// function defination
+void rayyan()
+{
+  printf("MD.Azizul Hakim Rayyan\nMy father's name is MD. Abul Hossain.And my mother's name is Rahanara Begum.I have two brother and one sister.");
+}
