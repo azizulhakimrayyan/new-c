@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main()
+{
+  int a, b;
+  printf("Enter 2 digit number:");
+  scanf("%d %d", &a, &b);
+  printf("%20d\n", a);
+  printf("%15s %4d\n", "-", b);
+  printf("%20s\n", "-----");
+  printf("Result:%13d", a - b);
+
+  return 0;
+}
