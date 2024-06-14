@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main()
+{
+  int a, b;
+  printf("Enter a two-digit integer and a one-digit integer:");
+  scanf("%d %d", &a, &b);
+  printf("%20d)%d(%d\n", b, a, a / b);
+  printf("%23d\n", (a / b) * b);
+  printf("%24s\n", "----");
+  printf("%23d", a - (a / b) * b);
+  return 0;
+}
