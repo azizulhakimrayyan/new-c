@@ -3,7 +3,7 @@
 int main()
 {
   int a, b;
-  printf("Enter 2 digit number:");
+  printf("Enter two 2 digit number:");
   scanf("%d %d", &a, &b);
   printf("%20d\n", a);
   printf("%15s %4d\n", "-", b);
