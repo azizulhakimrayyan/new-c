@@ -1,0 +1,44 @@
+#include <stdio.h>
+int main()
+{
+  int a;
+  int sum = 0;
+  printf("Enter any number:");
+  scanf("%d", &a);
+  while (0 < a)
+  {
+    sum += a % 10;
+    a = a / 10;
+  }
+  printf("sum of the digits:%d", sum);
+
+  return 0;
+}
+
+
+
+
+
+//another way by using for loop:
+
+
+
+
+
+
+
+#include <stdio.h>
+int main()
+{
+  int a;
+  int sum = 0;
+  printf("Enter any number:");
+  scanf("%d", &a);
+  for (1; 0 < a; a = a / 10)
+  {
+    sum = sum + a % 10;
+  }
+  printf("sum of the digits:%d", sum);
+
+  return 0;
+}
