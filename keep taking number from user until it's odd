@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main()
+{
+
+  for (int a; 1; 1)
+  {
+    printf("Enter a number");
+    scanf("%d", &a);
+    printf("%d\n", a);
+    if (a % 2 == 1)
+    {
+      break;
+    }
+  }
+  printf("Thanks");
+  return 0;
+}
