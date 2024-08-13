@@ -1,0 +1,21 @@
+#include <stdio.h>
+int sum(int n);
+int main()
+{
+  printf("Enter a number:");
+  int x;
+  scanf("%d", &x);
+  printf("sum is =%d", sum(x));
+  return 0;
+}
+int sum(int n)
+{
+  if (n == 1)
+  {
+    return 1;
+  }
+
+  int sum_1 = sum(n - 1);
+  int sum = sum_1 + n;
+  return sum;
+}
