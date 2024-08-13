@@ -6,11 +6,11 @@ int main()
   printf("Enter a number for table:");
   int n;
   scanf("%d", &n);
-  prttable(n);
+  prttable(n);//argument/actual parameter
 
   return 0;
 }
-void prttable(int a)
+void prttable(int a)//parameter/formal parameter
 {
   for (int i = 1; i <= 10; i++)
   {
