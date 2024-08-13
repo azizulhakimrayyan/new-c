@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+void prttable(int a);
+int main()
+{
+  printf("Enter a number for table:");
+  int n;
+  scanf("%d", &n);
+  prttable(n);
+
+  return 0;
+}
+void prttable(int a)
+{
+  for (int i = 1; i <= 10; i++)
+  {
+    printf("%d\n", i * a);
+  }
+}
