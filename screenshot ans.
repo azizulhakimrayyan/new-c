@@ -1,0 +1,62 @@
+#include <stdio.h>
+
+int main() {
+    float sum = 0, f = 0, g = 0;
+    for (int p = 0; p < 2; p++) {
+      float x;
+      char t;
+      printf("Enter type of items ('M': Mill cloth & 'H': Handloom items): ");
+      scanf(" %c", &t);
+      printf("Enter the purchase amount: ");
+      scanf("%f", &x);
+      if (x > 0 && x <= 100){
+          switch (t) {
+              case 'M':
+                f = x; 
+                printf("Mill cloth: %.2f\n", f);break;
+              case 'H':
+                g = x - (x * 5.0 / 100.0);
+                printf("Handloom items: %.2f\n", g);break;
+              default:
+                printf("Enter valid item type!\n");break; 
+            }
+     }else if (101<=x&&x<=200){
+       switch (t){
+         case 'M':
+           f = x - x * (5.0 / 100.0);
+           printf("Mill cloth:%4.2f\n",f);break;
+         case 'H':
+           g = x - (x * 7.5 / 100.0);
+           printf("Net amount:%4.2f\n",g);break;
+         default:
+           printf("Enter the valid items!!\n");break;
+    }}else if (201<=x&&x<=300){
+        switch (t){
+          case 'M':
+            f = x - x * (7.5 / 100.0);
+            printf("Net amount:%4.2f\n",f);break;
+          case 'H':
+            g = x - (x * 10.0 / 100.0);
+            printf("Net amount:%4.2f\n",g);break;
+          default:
+            printf("Enter the valid items!!\n");break;
+    }}else if (x>300){
+        switch (t){
+         case 'M':
+           f = x - x * (10.0 / 100.0);
+           printf("Net amount:%4.2f\n",f); break;
+         case 'H':
+           g= x - x * (15.0 / 100.0);
+           printf("Net amount:%4.2f\n",g);break;
+         default:
+          printf("Enter the valid items!!\n");break;
+   }}sum = f + g;}
+  printf("Total Net amount: %4.2f\n", sum);
+  return 0;}
+
+
+   
+
+
+  
+  
