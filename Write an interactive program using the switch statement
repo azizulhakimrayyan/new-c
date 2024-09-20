@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include<math.h>
+int main (){
+  double x;
+  char t;
+  printf("Enter the angle in radians:");
+  scanf("%lf",& x);
+  printf("Enter the trigonometric function (s for sin, c for cos, t for tan:");
+  scanf("%s",& t);
+  switch (t)
+  {
+  case 's':
+  case 'S':
+      printf("sin(%4.3lf)=%4.3lf", x, sin(x));
+      break;
+  case 'c':
+  case 'C':
+      printf("cos(%4.3lf)=%4.3lf", x, cos(x));
+      break;
+  case 't':
+  case 'T':
+      printf("tan(%4.3lf)=%4.3lf", x, tan(x));
+      break;
+  default:
+      printf("Enter a valid trigonometric function!!");
+    break;
+  }
+  return 0;
+}
+
+
+
+
