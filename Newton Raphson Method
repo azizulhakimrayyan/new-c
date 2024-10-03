@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include<math.h>
+#define f(x) ((pow(x,3)) - (x) - 11)
+#define q(x) ((pow(3*x,2)) -1)
+int main() {
+  printf("Name:MD.Azizul Hakim\nID:2202110\n");
+  float a=0,m;
+  int i;
+  float t = 0.0001;
+  printf("Enter number of Iteration:");
+  scanf("%d", &i);
+
+  
+   for (int p = 1; p <=i ; p++)
+   {
+     m = a - (f(a) / q(a));
+     printf("Root=%f\n",m);
+     if (fabs(f(a)-f(m))<0.0001)
+     {
+      printf("itoretion=%d\n",p);
+      break;
+     }
+     
+     a = m;
+   }
+  
+  return 0;}
+ 
