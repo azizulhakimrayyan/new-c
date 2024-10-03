@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include<math.h>
+#define f(x) (1/(1+pow(x,2)))
+
+int main() {
+  printf("Name:MD.Azizul Hakim\nID:2202110\n");
+  float a,b,h,n,s_o=0,s_e=0,x;
+  printf("Enter lower & higher limit:");
+  scanf("%f %f", &a,&b);
+  printf("Enter number of sub-intervals:");
+  scanf("%f", &n);
+  h = (b - a) / n;
+  for (int p = 1; p <=n ; p++)
+  {
+    x = a + (p * h);
+    if (p%2==1)
+    {s_o = s_o + f(x);}
+    else 
+    s_e = s_e + f(x);
+
+  }
+  float ans = (h / 3) * ((f(a) + f(b)) + 4 * (s_o) + 2 * (s_e));
+  printf("The value of intregration is:%f", ans);
+
+  return 0;}
+ 
