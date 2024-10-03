@@ -1,0 +1,32 @@
+
+#include <stdio.h>
+#include<math.h>
+#define f1(x,y,z) ((7.74 - y + 2*z)/10)
+#define f2(x,y,z) ((39.66-x-3*z)/12)
+#define f3(x,y,z) ((54.8-4*y-3*x)/15)
+int main() {
+  printf("Name:MD.Azizul Hakim\nID:2202110\n");
+  float x0, y0, z0, x1, y1, z1;
+  int i;
+  printf("Initialize y0 & z0:");
+  scanf("%f %f", &y0,&z0);
+  printf("Enter number of Iteration:");
+  scanf("%d", &i);
+  for (int p = 1; p <=i ; p++)
+  {
+    x1 = f1(x0, y0, z0);
+    y1 = f2(x1, y0, z0);
+    z1 = f3(x1, y1, z0);
+    x0 = x1;
+    y0 = y1;
+    z0 = z1;
+    printf("Number of itoretion:%d\n", p);
+    printf("Root of x:%f\n", x0);
+    printf("Root of y:%f\n", y0);  
+    printf("Root of z:%f\n", z0);
+  }
+  
+
+
+  return 0;}
+ 
