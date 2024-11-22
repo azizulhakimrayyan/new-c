@@ -1,0 +1,11 @@
+#include <stdio.h> 
+int main() {
+    int num;
+printf("Enter a number: ");
+scanf("%d", &num);
+if(num==2||num==3||(num%2!=0&&num%3!=0))
+  printf("PRIME NUMBER");
+  else
+  printf("NOT PRIME NUMBER");
+    return 0;
+}
