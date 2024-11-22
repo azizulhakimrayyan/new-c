@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main()
+{
+  int a = 0,b=1,c;
+  printf("%9d\t", b);
+  for (int i = 1; i < 40;i++)
+  {if (i%4==0){
+      printf("\n");
+    }
+    c = a + b;
+    a = b;
+    b = c;
+    printf("%9d\t", c);
+}
+return 0;
+}
