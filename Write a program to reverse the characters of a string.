@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+
+int main() {
+  char a[100];
+  char temp;
+  printf("Enter  word:");
+  int p=0;
+  scanf("%s", a);
+  while (a[p]!='\0'){
+    p++;}
+for (int i = 0; i < p/2; i++)
+{
+  p--;
+  temp = a[i];
+
+  a[i] = a[p];
+  a[p] = temp;
+}
+printf("%s", a);
+return 0;
+}
