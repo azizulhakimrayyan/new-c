@@ -1,0 +1,30 @@
+#include <stdio.h> 
+int main() {
+float a[10];
+float avg = 0.0;
+
+printf("Enter 10 number:");
+for (int i = 0; i < 10; i++)
+{
+  scanf("%f", &a[i]);
+  avg = avg + a[i];
+}
+printf("avg= %f" ,(avg / 10));
+float max = a[0], min = a[0];
+for (int i = 0; i < 10; i++)
+{
+  if (max<a[i])
+  {
+    max = a[i];
+  }
+  else if (min>a[i])
+  {
+   min = a[i];
+  }
+  
+}
+
+printf("max= %f" ,max);
+printf("min= %f" ,min);
+return 0;
+}
