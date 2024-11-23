@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+
+int main() {
+  char a[100];
+  char b[50];
+  printf("Enter 2 word:");
+  int p=0;
+  scanf("%s %s", a,b);
+  while (a[p]!='\0')
+    p++;
+  int q = 0;
+  while (b[q]!='\0'){
+    a[p] = b[q];
+    p++;
+    q++;
+  }
+  a[p] = '\0';
+    printf("%s", a);
+    return 0;
+}
