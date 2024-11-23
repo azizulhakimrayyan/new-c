@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+
+int main() {
+  int max = 0;
+  int r, c;
+  int a[3][4]={{1,2,3,4},{4,5,6,7},{8,12,10,11}};
+for (int i = 0; i < 3; i++)
+{
+for (int p = 0; p < 4; p++)
+{
+  if(a[i][p]>max){
+    max = a[i][p];
+    r = i;
+    c = p;
+  }
+}
+
+}
+printf("max entry :%d\n", max);
+printf("row & column:%d,%d\n",r+1,c+1);
+return 0;
+}
